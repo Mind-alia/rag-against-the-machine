@@ -1,0 +1,42 @@
+[project]
+name = "rag-42"
+version = "0.1.0"
+description = "Retrieval-Augmented Generation system for the vLLM codebase"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic[email]>=2.8.0",
+    "fire>=0.6.0",
+    "tqdm>=4.66.0",
+    "bm25s>=0.2.0",
+    "pystemmer>=2.2.0",
+    "numpy>=1.26.0",
+    "transformers>=4.51.0",
+    "torch>=2.3.0",
+    "accelerate>=0.33.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "flake8>=7.0.0",
+    "mypy>=1.10.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["test"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true
+exclude = '''(?x)(
+    ^(\.venv|pydantic_env|datasets_public|moulinette_pkg|tmp)/
+  | ^data/
+  | (^|/)vllm-[0-9]
+  | ^\.(mypy_cache|pytest_cache)/
+)'''

@@ -1,0 +1,12 @@
+[flake8]
+exclude =
+    .git,
+    .venv,
+    pydantic_env,
+    vllm-0.10.1,
+    data,
+    datasets_public,
+    moulinette_pkg,
+    tmp,
+    .mypy_cache,
+    .pytest_cache

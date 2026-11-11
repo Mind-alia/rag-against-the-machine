@@ -1,0 +1,62 @@
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+pydantic_env/
+
+# --- Tool caches ---
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- Editors and operating systems ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Project attachments: provided with the subject, not part of the code ---
+vllm-0.10.1/
+vllm-*.zip
+moulinette/
+moulinette_pkg/
+moulinette*.zip
+en.subject.pdf
+README-subject.md
+subject.pdf
+
+# --- Correction material: corrector-only, must never be submitted ---
+exams/
+evaluations/
+RAG_22Juil/
+private/
+datasets_private*
+data/datasets/
+moulinette-ubuntu
+moulinette-fedora
+
+# --- Generated at runtime ---
+data/raw/
+data/processed/
+data/output/
+data_management/
+indexes/
+outputs/
+tmp/
+
+# --- Model weights and caches ---
+models/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+
+# --- Working notes, not part of the deliverable ---
+docs/superpowers/
