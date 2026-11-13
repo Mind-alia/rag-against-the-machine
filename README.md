@@ -282,3 +282,8 @@ options, and audit the project against the subject (error handling, evaluation
 metric parity with the moulinette, and test coverage). Every generated change
 was read, tested, and measured locally before being kept; the recall and
 latency figures above come from runs on this machine, not from the model.
+
+## License
+
+[MIT](LICENSE) for the code. The question datasets under `datasets_public/` were
+provided with the 42 subject and are not covered by this license.
