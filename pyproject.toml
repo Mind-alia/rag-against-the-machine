@@ -1,5 +1,5 @@
 [project]
-name = "rag-42"
+name = "rag-against-the-machine"
 version = "0.1.0"
 description = "Retrieval-Augmented Generation system for the vLLM codebase"
 readme = "README.md"

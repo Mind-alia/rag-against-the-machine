@@ -2,6 +2,8 @@
 
 # RAG against the machine
 
+[![CI](https://github.com/Mind-alia/rag-against-the-machine/actions/workflows/ci.yml/badge.svg)](https://github.com/Mind-alia/rag-against-the-machine/actions/workflows/ci.yml)
+
 ## Description
 
 This project builds a Retrieval-Augmented Generation (RAG) system that answers
@@ -39,7 +41,8 @@ make lint        # flake8 + mypy with the mandatory flags
 make lint-strict # flake8 + mypy --strict
 ```
 
-For a concise defense checklist, see [`CORRECTION.md`](CORRECTION.md).
+`.python-version` pins Python 3.10, so `uv` picks (or downloads) the right
+interpreter by itself.
 
 Unzip the vLLM repository (the `vllm-0.10.1` attachment) into either layout:
 

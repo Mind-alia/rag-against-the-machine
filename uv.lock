@@ -1435,7 +1435,7 @@ wheels = [
 ]
 
 [[package]]
-name = "rag-42"
+name = "rag-against-the-machine"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
